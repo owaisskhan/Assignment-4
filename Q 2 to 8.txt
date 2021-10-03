@@ -1,0 +1,141 @@
+
+Q no 2:
+To make a function that take a number as parameter, and print the table of that number.
+
+
+void main() {
+  
+ var a=[3,4,5];
+  for(var i=0;i<=a.length;i++)
+    abc(a[i]);
+  
+    
+}
+void  abc(num num)
+ {
+
+  for(var i =1;i<=10;i++){ 
+   print("$num x $i =${num*i}");
+ }
+}
+
+Q no 3:
+List lst = [2,4,6,8,9];
+Make a function that takes a number as parameter and divide that parameter to every element
+in the list
+
+void main() {
+  var x=2;
+ xyz(x);
+}
+
+void xyz(int num){
+  
+  List lst = [2,4,6,8,9];
+  for(var i in lst){
+    print("$i/$num =${i/num}");
+  }
+}
+  
+
+
+
+
+Q no 4:
+Make a function for printing mark sheet then Make a list of at-least 5 names and another list of
+their marks, and print the mark sheet of all of them.
+
+
+void main() {
+ 
+  marksheet();
+  
+  
+}
+  
+ void marksheet(){
+    var lst1=["faraz","owais","ali","ahmed","waseem"];
+    var lst2=[444,399,434,354,398];
+    var map=Map.fromIterables(lst1,lst2);
+    print(map);
+ }
+
+Q no 5:
+Make a function in class and then call it outside class.
+
+void main() {
+ 
+ xyz();
+}
+
+void xyz(){
+  var name="owais";
+  print(name);
+}
+  
+Q no 6:
+Print your name in a sentence using classes.
+
+void main() {
+ 
+ ABC obj=ABC();
+  obj.myfun();  
+}
+
+class ABC{
+  dynamic myfun (){
+  String b ="Muhammad Owais";
+  String a ="My Name Is ";
+  print(a+b);
+  
+}
+
+}
+
+Q no 7:
+Make a constructor that requires your name, age, education and then print that.
+
+
+void main() {
+ 
+ABC obj=ABC(age:23,name:"owais",Edu:"FSC");
+  obj.myname();
+}
+
+class ABC{
+  
+  int age;
+  String name;
+  String Edu;
+  
+  
+  ABC({required this.name,required this.age,required this.Edu});
+  
+  void myname(){
+    print("My name is $name");
+    print("My age is $age");
+    print("My Education is $Edu");
+  }
+}
+
+Q no 8:
+Write a Code using inheritance
+
+void main() {   
+      Parrot p=new Parrot();    
+      p.speak();    
+      p.fly();    
+}   
+class Bird{    
+      void fly()  
+         {  
+            print("The bird can fly");  
+          }  
+   }      
+class Parrot extends Bird{    
+          
+         void speak(){  
+             print("The parrot can speak");  
+                 }            
+}  
+ 
